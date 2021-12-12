@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/flie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/purple_200"
+        android:hint="file name"
+        android:padding="5dp"
+        android:textSize="15dp" />
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="6" />
+
+    <TextView
+        android:id="@+id/intro_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:hint="file information"
+        android:padding="5dp"
+        android:textSize="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/switch_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:text="switch"
+            android:textSize="6dp" />
+
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="record"
+            android:textSize="6dp" />
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
